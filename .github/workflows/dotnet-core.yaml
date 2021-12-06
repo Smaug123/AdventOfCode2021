@@ -23,5 +23,7 @@ jobs:
       run: dotnet build AdventOfCode2021.sln --configuration Release --no-restore
     - name: Test
       run: dotnet test AdventOfCode2021.sln --no-restore --verbosity normal
+    - name: Install Fantomas
+      run: dotnet tool restore
     - name: Run Fantomas
       run: dotnet tool run fantomas --check -r .
