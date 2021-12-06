@@ -11,7 +11,7 @@ module Day1 =
         |> Seq.pairwise
         |> Seq.filter (fun (a, b) -> a < b)
         |> Seq.length
-        
+
     let part2 () =
         Utils.readResource "Day1.txt"
         |> Seq.map int

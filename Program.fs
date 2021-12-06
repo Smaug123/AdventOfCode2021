@@ -7,6 +7,6 @@ module Program =
         | "1" ->
             printfn $"{Day1.part1 ()}"
             printfn $"{Day1.part2 ()}"
-        | s ->
-            failwithf $"Unexpected argument: %s{s}"
+        | s -> failwithf $"Unexpected argument: %s{s}"
+
         0

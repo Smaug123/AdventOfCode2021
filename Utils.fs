@@ -5,15 +5,20 @@ open System.Reflection
 
 [<RequireQualifiedAccess>]
 module Utils =
-    type private Dummy = class end
+    type private Dummy =
+        class
+        end
 
     let readResource' (name : string) : string array =
         let asm = Assembly.GetAssembly typeof<Dummy>
-        use stream = asm.GetManifestResourceStream (sprintf "AdventOfCode2021.Inputs.%s" name)
-        let s =
-            use reader = new StreamReader(stream)
-            reader.ReadToEnd()
-        s.Split('\r', '\n')
 
-    let inline readResource (name : string) : string list =
-        readResource' name |> List.ofArray
+        use stream =
+            asm.GetManifestResourceStream (sprintf "AdventOfCode2021.Inputs.%s" name)
+
+        let s =
+            use reader = new StreamReader (stream)
+            reader.ReadToEnd ()
+
+        s.Split ('\r', '\n')
+
+    let inline readResource (name : string) : string list = readResource' name |> List.ofArray
