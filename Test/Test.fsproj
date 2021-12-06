@@ -19,7 +19,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\AdventOfCode2021.fsproj" />
+      <ProjectReference Include="..\AdventOfCode2021\AdventOfCode2021.fsproj" />
     </ItemGroup>
 
 </Project>

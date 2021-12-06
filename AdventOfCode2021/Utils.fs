@@ -13,7 +13,7 @@ module Utils =
         let asm = Assembly.GetAssembly typeof<Dummy>
 
         use stream =
-            asm.GetManifestResourceStream (sprintf "AdventOfCode2021.Inputs.%s" name)
+            asm.GetManifestResourceStream (sprintf "AdventOfCode2021.%s" name)
 
         let s =
             use reader = new StreamReader (stream)

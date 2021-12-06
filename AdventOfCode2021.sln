@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "AdventOfCode2021", "AdventOfCode2021.fsproj", "{47D24174-5D7A-44F5-8215-F2D2B00BA452}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "AdventOfCode2021", "AdventOfCode2021\AdventOfCode2021.fsproj", "{47D24174-5D7A-44F5-8215-F2D2B00BA452}"
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Test", "Test\Test.fsproj", "{C3ED559C-4D93-41F9-91C2-2B95F7EA3A83}"
 EndProject

@@ -6,3 +6,4 @@ riderModule.iml
 .idea/
 .ionide/
 *.sln.DotSettings.user
+.DS_Store
