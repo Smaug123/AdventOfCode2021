@@ -1,0 +1,27 @@
+name: .NET Core
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 6.0.100
+    - name: Install dependencies
+      run: dotnet restore AdventOfCode2021.sln
+    - name: Build
+      run: dotnet build AdventOfCode2021.sln --configuration Release --no-restore
+    - name: Test
+      run: dotnet test AdventOfCode2021.sln --no-restore --verbosity normal
+    - name: Run Fantomas
+      run: dotnet tool run fantomas --check -r .
