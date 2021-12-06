@@ -6,6 +6,7 @@
 
     <ItemGroup>
       <Compile Include="TestDay1.fs" />
+      <Compile Include="TestDay6.fs" />
     </ItemGroup>
 
     <ItemGroup>
