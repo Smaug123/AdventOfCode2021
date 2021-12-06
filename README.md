@@ -4,6 +4,8 @@ I'm not promising to actually do this; my [main attempt](https://github.com/Smau
 
 These solutions are not designed for great speed (I wouldn't be using .NET if they were!).
 
+A reasonable commit to grab a copy of this repo from is 71832bb0355c2afa5abc1d157b3c8f0cfc9f5f9d, which is in a fully usable state with Day 1 complete and tested.
+
 # Development tips
 
 There are pull request checks on this repo, enforcing [Fantomas](https://github.com/fsprojects/fantomas/)-compliant formatting.
