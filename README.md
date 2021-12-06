@@ -2,6 +2,8 @@
 
 I'm not promising to actually do this; my [main attempt](https://github.com/Smaug123/advent-of-code-2021) is in Rust.
 
+These solutions are not designed for great speed (I wouldn't be using .NET if they were!).
+
 # Development tips
 
 There are pull request checks on this repo, enforcing [Fantomas](https://github.com/fsprojects/fantomas/)-compliant formatting.
